@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ Next.js: Aprendizado e Prática com App Router
 
-## Getting Started
+Bem-vindo ao meu repositório sobre **Next.js**, com foco no modelo de rotas baseado em **App Router**! 🚀  
+Aqui compartilho meu aprendizado, explorando as novidades, melhores práticas e implementações utilizando essa abordagem moderna do Next.js.
 
-First, run the development server:
+## 🧐 Sobre o Repositório
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Este repositório serve como um registro da minha jornada estudando e aplicando **Next.js com App Router**, documentando conhecimentos adquiridos e desafios enfrentados. Além disso, é um espaço para que recrutadores e colaboradores possam ver meu envolvimento com essa tecnologia.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌎 Demonstração
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Você pode visualizar o projeto em funcionamento acessando:  
+🔗 **[EM BREVE]**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📂 O que você encontrará aqui?
 
-## Learn More
+✔️ Estruturação de projetos utilizando **App Router**  
+✔️ Navegação entre páginas e carregamento de componentes dinâmicos  
+✔️ Uso de **Server Components** e **Client Components**  
+✔️ Gerenciamento de estado e contexto na nova arquitetura  
+✔️ Melhores práticas para **SEO e performance**  
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Por que Next.js com App Router?
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O **App Router** introduz uma abordagem moderna para estruturar aplicações Next.js, trazendo mais flexibilidade e aproveitando o poder dos **React Server Components**. Ele melhora a separação entre client e server, otimizando a performance e simplificando a organização do código.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔥 Vamos conectar?
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Se quiser trocar ideias sobre **Next.js, App Router** ou desenvolvimento frontend em geral, fique à vontade para entrar em contato!  
+Sugestões, contribuições e feedbacks são sempre bem-vindos. 😃
