@@ -1,7 +1,9 @@
+export const dynamic = 'force-dynamic';
+
 export default async function Page() {
   const obj = await erroEm5s();
 
-  if (process.env.NODE_ENV !== "development" && obj === undefined) {
+  if (obj === undefined) {
     throw new Error('Objeto inválido!');
   }
 
