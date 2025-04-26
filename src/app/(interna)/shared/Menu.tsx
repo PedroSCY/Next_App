@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import MenuItem from "./MenuItem";
-import { IconArrowsJoin2, IconBug, IconLayoutDashboard, IconLoader, IconRoute, IconRoute2 } from "@tabler/icons-react";
+import { IconArrowsJoin2, IconBug, IconDatabase, IconLayoutDashboard, IconLoader, IconRoute, IconRoute2 } from "@tabler/icons-react";
 import MenuGrupo from "./MenuGrupo";
 import { usePathname } from "next/navigation";
 
@@ -39,13 +39,19 @@ export default function Menu() {
           url="/dinamica/pacote/maldivas/abril/13042026"
           texto="Rota Dinâmica #2"
           icone={<IconRoute2 />}
-          selecionado={url === "/dinamica/pacote/maldivas/janeiro/13042026"}
+          selecionado={url === "/dinamica/pacote/maldivas/abril/13042026"}
         />
         <MenuItem
           url="/paralelas"
           texto="Rotas Paralelas"
           icone={<IconArrowsJoin2 />}
           selecionado={url === "/paralelas"}
+        />
+        <MenuItem
+          url="/estado"
+          texto="Usando Estado"
+          icone={<IconDatabase />}
+          selecionado={url === "/estado"}
         />
       </MenuGrupo>
     </nav>

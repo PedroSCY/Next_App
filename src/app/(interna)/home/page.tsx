@@ -1,7 +1,7 @@
 import React from "react";
 import Titulo from "../shared/Titulo";
 import Funcionalidade from "./Funcionalidade";
-import { IconArrowsJoin2, IconBug, IconLoader, IconRoute, IconRoute2 } from "@tabler/icons-react";
+import { IconArrowsJoin2, IconBug, IconDatabase, IconLoader, IconRoute, IconRoute2 } from "@tabler/icons-react";
 
 export default function Page() {
   return (
@@ -16,6 +16,7 @@ export default function Page() {
           <Funcionalidade url="/dinamica/blog/a1b2c3?Seed=Brasil&Tipo=Ferias&Fichas=5" titulo="Rota Dinâmica #1" icone={<IconRoute/>} />
           <Funcionalidade url="/dinamica/pacote/maldivas?Fichas=5&Data=13-04-2026" titulo="Rota Dinâmica #2" icone={<IconRoute2/>} />
           <Funcionalidade url="/paralelas" titulo="Rotas paralelas" icone={<IconArrowsJoin2/>} />
+          <Funcionalidade url="/estado" titulo="Usando Estado" icone={<IconDatabase/>} />
       </div>
     </div>
   );
