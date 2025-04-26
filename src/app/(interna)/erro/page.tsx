@@ -1,13 +1,13 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import React from 'react'
 
 export default function page() {
 
-    const obj: any = undefined
+    const obj = undefined
 
     return (
     <div>
-        {obj.atributo}
+        {(obj as unknown as {atributo: string}).atributo}
     </div>
   )
 }

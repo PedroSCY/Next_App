@@ -1,8 +1,12 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import Titulo from "@/app/(interna)/shared/Titulo";
 import React from "react";
 
-export default function Page(props: any) {
+interface PageProps {
+  params: { [key: string]: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+}
+
+export default function Page(props: PageProps) {
   return (
     <div>
       <Titulo

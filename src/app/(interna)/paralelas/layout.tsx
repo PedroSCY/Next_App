@@ -1,7 +1,13 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import React from "react";
+import React, { ReactNode } from "react";
 
-export default function Layout(props: any) {
+interface ParalelasLayoutProps {
+  children: ReactNode;
+  brasil: ReactNode;
+  japao: ReactNode;
+  usa: ReactNode;
+}
+
+export default function Layout(props: ParalelasLayoutProps) {
   return (
     <div className="flex flex-col gap-10">
       <div>{props.children}</div>

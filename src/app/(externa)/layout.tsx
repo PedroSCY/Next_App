@@ -2,7 +2,7 @@ import React from "react";
 import Cabecalho from "./shared/Cabecalho";
 import Rodape from "./shared/Rodape";
 
-export default function Layout(props: any) {
+export default function Layout(props: {children: React.ReactNode}) {
   return (
     <div className=" flex flex-col bg-black min-h-screen">
       <Cabecalho />

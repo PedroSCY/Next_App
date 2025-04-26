@@ -1,10 +1,10 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+import { IconProps } from "@tabler/icons-react";
 import Link from "next/link";
-import React from "react";
+import React, { ReactElement } from "react";
 
 export interface FuncionalidadeProps {
   titulo: string;
-  icone: any;
+  icone: ReactElement<IconProps>
   url: string;
 }
 

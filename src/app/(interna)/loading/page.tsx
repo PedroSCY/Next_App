@@ -1,9 +1,8 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import React from "react";
+import React, { JSX } from "react";
 import Titulo from "../shared/Titulo";
 import Image from "next/image";
 
-function carregamentoPesado(): Promise<any> {
+function carregamentoPesado(): Promise<JSX.Element> {
   return new Promise((resolve) => {
     setTimeout(
       () =>

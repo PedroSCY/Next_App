@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 
 function erroEm5s(): Promise<undefined> {
   return new Promise((resolve) => {
@@ -9,6 +8,6 @@ function erroEm5s(): Promise<undefined> {
 }
 
 export default async function Page() {
-  const obj: any = await erroEm5s();
-  return <span>{obj.name}</span>;
+  const obj = await erroEm5s();
+  return <span>{(obj as unknown as { name: string}).name}</span>;
 }

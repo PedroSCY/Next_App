@@ -1,11 +1,10 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import Link from "next/link";
-import React from "react";
+import React, { ReactNode } from "react";
 
 export interface MenuItemProps {
   url: string;
   texto: string;
-  icone: any;
+  icone: ReactNode;
   selecionado?: boolean;
 }
 

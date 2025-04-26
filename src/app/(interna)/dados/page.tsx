@@ -1,5 +1,12 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import Titulo from "../shared/Titulo";
+
+interface Produto {
+  id: number;
+  destino: string;
+  data: Date;
+  preco: number;
+}
 
 async function obterProdutos() {
   const url = "http://localhost:3000/dados/produtos";
@@ -17,7 +24,7 @@ export default async function Page() {
     <div className="flex flex-col gap-10">
       <Titulo texto="Usando API" legenda="Componente com dados de uam API" />
       <div>
-        {produtos.map((produto: any, index: number) => (
+        {produtos.map((produto: Produto, index: number) => (
           <div
             key={produto.id}
             className={`grid grid-cols-[1fr_3fr_2fr_1fr] px-5 py-2.5 ${
