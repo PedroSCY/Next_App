@@ -2,11 +2,21 @@ import Titulo from "@/app/(interna)/shared/Titulo";
 import React from "react";
 
 interface PageProps {
-  params: { [key: string]: string };
-  searchParams: { [key: string]: string | string[] | undefined };
+  params: { parametros: string[] };
+  searchParams?: { [key: string]: string | string[] | undefined };
 }
 
-export default function Page(props: PageProps) {
+export default async function Page({ params, searchParams }: PageProps) {
+
+  const resolvedParams = await params; 
+  const parametros = resolvedParams.parametros; 
+  const safeParams = { parametros };
+
+  const resolvedSearchParams = await searchParams; 
+  const safeSearchParams = resolvedSearchParams
+    ? JSON.parse(JSON.stringify(resolvedSearchParams))
+    : {};
+
   return (
     <div>
       <Titulo
@@ -14,9 +24,11 @@ export default function Page(props: PageProps) {
         legenda="Exibindo todos os parâmetros passados na URL"
       />
       <div className="flex flex-col gap-5 mt-10">
-        <span className="text-2xl text-zinc-400 font-black">Id: {props.params.id}</span>
+        <span className="text-2xl text-zinc-400 font-black">Parâmetros: {parametros.join(", ")}</span>
         <code>
-          <pre className="text-2xl bg-black p-5 rounded-lg text-zinc-300">{JSON.stringify(props, null, 4)}</pre>
+          <pre className="text-2xl bg-black p-5 rounded-lg text-zinc-300">
+          {JSON.stringify({ params: safeParams, searchParams: safeSearchParams }, null, 4)}
+          </pre>
         </code>
       </div>
     </div>
