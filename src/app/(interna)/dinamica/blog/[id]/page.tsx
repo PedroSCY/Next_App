@@ -3,7 +3,7 @@ import Titulo from "@/app/(interna)/shared/Titulo";
 import React from "react";
 
 interface PageProps {
-  params: { [key: string]: string };
+  params: { id: string };
   searchParams: { [key: string]: string | string[] | undefined };
 }
 
