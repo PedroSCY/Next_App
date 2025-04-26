@@ -1,4 +1,5 @@
 
+import { headers } from "next/headers";
 import Titulo from "../shared/Titulo";
 
 interface Produto {
@@ -9,11 +10,16 @@ interface Produto {
 }
 
 async function obterProdutos() {
-  const url = "http://localhost:3000/dados/produtos";
+  const headersList = await headers();
+  const host = headersList.get("host");
+  const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
+
+  const url = `${protocol}://${host}/dados/produtos`;
+
   const produtos = await fetch(url, {
-    next: { revalidate: 10 }, // Revalida a cada 10 segundos
-    // cache: "no-store", // Não armazena em cache
+    next: { revalidate: 10 },
   });
+
   return produtos.json();
 }
 
