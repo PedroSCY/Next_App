@@ -2,6 +2,7 @@
 import React from "react";
 import Logo from "../shared/Logo";
 import Menu from "./shared/Menu";
+import Cabecalho from "./shared/Cabecalho";
 
 export default function layout(props: any) {
   return (
@@ -11,6 +12,7 @@ export default function layout(props: any) {
         <Menu />
       </aside>
       <div className="flex flex-col flex-1">
+        <Cabecalho/>
         <main className="flex-1 p-7">{props.children}</main>
       </div>
     </div>
