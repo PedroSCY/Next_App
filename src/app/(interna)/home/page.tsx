@@ -1,7 +1,7 @@
 import React from "react";
 import Titulo from "../shared/Titulo";
 import Funcionalidade from "./Funcionalidade";
-import { IconArrowsJoin2, IconBug, IconDatabase, IconLoader, IconRoute, IconRoute2 } from "@tabler/icons-react";
+import { IconApi, IconArrowsJoin2, IconBug, IconDatabase, IconLoader, IconRoute, IconRoute2 } from "@tabler/icons-react";
 
 export default function Page() {
   return (
@@ -17,6 +17,7 @@ export default function Page() {
           <Funcionalidade url="/dinamica/pacote/maldivas?Fichas=5&Data=13-04-2026" titulo="Rota Dinâmica #2" icone={<IconRoute2/>} />
           <Funcionalidade url="/paralelas" titulo="Rotas paralelas" icone={<IconArrowsJoin2/>} />
           <Funcionalidade url="/estado" titulo="Usando Estado" icone={<IconDatabase/>} />
+          <Funcionalidade url="/dados" titulo="Usando API" icone={<IconApi/>} />
       </div>
     </div>
   );
