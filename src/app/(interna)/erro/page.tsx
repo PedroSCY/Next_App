@@ -1,13 +1,16 @@
+'use client';
 
-import React from 'react'
+import React, { useEffect } from 'react';
 
-export default function page() {
+export default function Page() {
+  useEffect(() => {
+    const obj = undefined;
+    console.log((obj as unknown as { atributo: string }).atributo);
+  }, []);
 
-    const obj = undefined
-
-    return (
+  return (
     <div>
-        {(obj as unknown as {atributo: string}).atributo}
+      Forçando erro...
     </div>
-  )
+  );
 }
