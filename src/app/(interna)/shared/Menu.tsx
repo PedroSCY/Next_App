@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import MenuItem from "./MenuItem";
-import { IconApi, IconArrowsJoin2, IconBug, IconDatabase, IconLayoutDashboard, IconLoader, IconRoute, IconRoute2 } from "@tabler/icons-react";
+import { IconApi, IconArrowsJoin2, IconBug, IconChartDots3, IconDatabase, IconLayoutDashboard, IconLoader, IconRoute, IconRoute2 } from "@tabler/icons-react";
 import MenuGrupo from "./MenuGrupo";
 import { usePathname } from "next/navigation";
 
@@ -58,6 +58,12 @@ export default function Menu() {
           texto="Usando API"
           icone={<IconApi />}
           selecionado={url === "/dados"}
+        />
+        <MenuItem
+          url="/contexto/a"
+          texto="Usando Contexto"
+          icone={<IconChartDots3 />}
+          selecionado={url === "/contexto/a" || url === "/contexto/b"}
         />
       </MenuGrupo>
     </nav>

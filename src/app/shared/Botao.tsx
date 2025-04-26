@@ -2,10 +2,10 @@ import Link from "next/link";
 import React from "react";
 
 export interface BotaoProps {
-  url: string;
+  url?: string;
   onclick?: () => void;
   destacado?: boolean;
-  children: string | React.ReactNode;
+  children?: string | React.ReactNode;
   maior?: boolean
 }
 
@@ -18,7 +18,7 @@ export default function Botao(props: BotaoProps) {
             ? "bg-zinc-100 text-black hover:border-zinc-200"
             : "bg-black text-zinc-400 hover:border-zinc-400"
         } ${props.maior ? 'px-5 py-3' : 'px-3 py-1.5 text-sm'}
-          border border-zinc-600 hover:border-zinc-400 rounded-lg `}
+          border border-zinc-600 hover:border-zinc-400 rounded-lg cursor-pointer`} onClick={props.onclick}
       >
         {props.children}
       </button>

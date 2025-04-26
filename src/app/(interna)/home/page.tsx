@@ -1,7 +1,7 @@
 import React from "react";
 import Titulo from "../shared/Titulo";
 import Funcionalidade from "./Funcionalidade";
-import { IconApi, IconArrowsJoin2, IconBug, IconDatabase, IconLoader, IconRoute, IconRoute2 } from "@tabler/icons-react";
+import { IconApi, IconArrowsJoin2, IconBug, IconChartDots3, IconDatabase, IconLoader, IconRoute, IconRoute2 } from "@tabler/icons-react";
 
 export default function Page() {
   return (
@@ -18,6 +18,7 @@ export default function Page() {
           <Funcionalidade url="/paralelas" titulo="Rotas paralelas" icone={<IconArrowsJoin2/>} />
           <Funcionalidade url="/estado" titulo="Usando Estado" icone={<IconDatabase/>} />
           <Funcionalidade url="/dados" titulo="Usando API" icone={<IconApi/>} />
+          <Funcionalidade url="/contexto/a" titulo="Usando Contexto" icone={<IconChartDots3/>} />
       </div>
     </div>
   );
