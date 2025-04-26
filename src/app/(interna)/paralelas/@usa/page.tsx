@@ -1,8 +1,7 @@
-
 export default async function Page() {
   const obj = await erroEm5s();
 
-  if (obj === undefined) {
+  if (process.env.NODE_ENV !== "development" && obj === undefined) {
     throw new Error('Objeto inválido!');
   }
 
